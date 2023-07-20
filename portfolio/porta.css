@@ -1,0 +1,223 @@
+/*These colors are inspired off of Batman*/
+:root {
+--text: rgb(204, 190, 61);
+--text-secondary: rgb(156, 146, 38);
+--background: rgb(0, 0, 0);
+--primary: rgb(124, 160, 226);
+--secondary: rgb(19, 25, 42);
+--accent: rgb(86, 140, 195);
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Quicksand','Maven Pro', sans-serif;
+    color: var(--text);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--secondary);
+}
+
+
+ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    width: 100vw;
+    height: 5vh;
+    padding: 15px;
+}
+
+
+
+h1 {
+    height: 100vh;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-secondary);
+    padding: 10px;
+}
+/*This is for a glow to all text "Rainy"*/
+span {
+    animation: animate 2s ease-in-out infinite alternate;
+    color: #f0f0f0;
+}
+
+@keyframes animate{
+    from{
+        text-shadow: 0 0 20px #289aab;
+    }
+    to{
+        text-shadow: 0 0 30px #289aab,
+                    0 0 10px #289aab;
+    }
+}
+/*Glow ends here*/
+
+a {
+    color: var(--text-secondary);
+    font-family: 'Maven Pro';
+    text-decoration: none;
+    display: inline-block;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px; /* Optional: Limit the width of the container */
+    margin: 0 auto;
+}
+  
+.project-tile {
+    flex: 0 0 calc(50% - 32px); /* Adjust the width as needed based on spacing/margins */
+    margin: 16px;
+    max-width: 700px; /* Optional: Limit the width of individual tiles */
+    text-align: center;
+}
+  
+img {
+    display: block;
+    width: 100%;
+}
+  
+.project-content p:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#profile-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+footer {
+    font-size: 10px;
+    text-align: right;
+    color: rgba(228, 228, 228, 0.5);
+    margin: 15px;
+}
+
+.rainy a {
+    font-size: 10px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.rainy a:hover {
+    font-style: italic;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .nav-container {
+      justify-content: center;
+    }
+  
+    ul {
+      font-size: 16px;
+      height: auto;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    .projects-container {
+      max-width: 90%;
+    }
+  
+    .project-tile {
+      flex: 0 0 calc(100% - 32px);
+    }
+  
+    .rainy a {
+      font-size: 8px;
+    }
+  }
+  
+  /* Tablet devices */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    ul {
+      font-size: 18px;
+    }
+  
+    h1 {
+      font-size: 48px;
+    }
+  
+    h2 {
+      font-size: 30px;
+    }
+  
+    .projects-container {
+      max-width: 90%;
+    }
+  
+    .project-tile {
+      flex: 0 0 calc(50% - 32px);
+    }
+  
+    .rainy a {
+      font-size: 10px;
+    }
+  }
+  
+  /* Desktop devices */
+  @media only screen and (min-width: 1025px) {
+    ul {
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 55px;
+    }
+  
+    h2 {
+      font-size: 35px;
+    }
+  
+    .projects-container {
+      max-width: 800px;
+    }
+  
+    .project-tile {
+      flex: 0 0 calc(50% - 32px);
+    }
+  
+    .rainy a {
+      font-size: 12px;
+    }
+  }
+  

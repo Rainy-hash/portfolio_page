@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="porta.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <title>Rainy's Portfolio</title>
+    </head>
+    <body>
+        <main>
+            <header id="welcome-section">
+                <!--This is how I always set up a navigation bar-->
+                <div class="nav-container">
+                    <ul id="navbar">
+                        <ul>
+                        <li><a class="navbar-link" href="#about">About</a></li>
+                        <li><a class="navbar-link" href="#projects">Projects</a></li>
+                        <li><a class="navbar-link" href="#profile-link">Contact</a></li>
+                        </ul>
+                    </ul>
+                </div>
+                <!--This time around I'm using span elements to give the selected text some shadow, I havent really used this element much until now-->
+                <h1 id="about"><span>Rainy</span>: Always Learning</h1>
+            </header>
+            <!--START PROJECT PORTION HERE-->
+            <h2>Here are a list of my current projects</h2>
+
+            <div class="projects-container" id="projects">
+                  <a href="https://codepen.io/Rainy-hash/pen/VwVPepQ" target="_blank" class="project-tile">
+                    <div class="project-content">
+                        <img class="project-image" src="https://iili.io/Hs7Njgp.png" alt="Product Page">
+                        <p>Product Page</p>
+                    </div>
+                  </a>
+
+                  <a href="https://codepen.io/Rainy-hash/pen/wvQgMoN" target="_blank" class="project-tile">
+                    <div class="project-content">
+                      <img class="project-image" src="https://iili.io/Hs7z2Og.png" alt="Technical Document">
+                      <p>Technical Document</p>
+                    </div>
+                  </a>
+              
+                  <a href="https://codepen.io/Rainy-hash/pen/NWEdxdm" target="_blank" class="project-tile">
+                    <div class="project-content">
+                      <img class="project-image" src="https://iili.io/Hs7NO7I.png" alt="Tribute Page">
+                      <p>Tribute Page</p>
+                    </div>
+                  </a>
+                  <a href="https://codepen.io/Rainy-hash/pen/ZEmLQKQ" target="_blank" class="project-tile">
+                  <div class="project-content">
+                    <img class="project-image" src="https://iili.io/Hs7NNdN.png" alt="Cat Page">
+                    <p >Cat Page</p>
+                  </div>
+                </a>
+              </div>
+            <!--END PROJECT PORTION HERE-->
+
+            <a id="profile-link" class="myButton" href="https://codepen.io/Rainy-hash" target="_blank"><p class="show-all">Show All</p></a>
+        </main>
+
+        <div id="profile">
+        <footer class="rainy">
+            <a href="https://github.com/Rainy-hash" target="_blank">Made by <span>Rainy</span></a>
+        </footer>
+        </div>
+
+    </body>
+    </html>
